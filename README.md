@@ -5,7 +5,7 @@
 
 This repository is a learning and experimentation lab for developing bare-metal software on ARM Cortex-A processors, using QEMU as the execution platform.
 
-The project starts from first principles (boot, linker, UART bring-up) and incrementally evolves toward a scheduler-based runtime, similar in spirit to early RTOS or microkernel bring-up work.
+The project starts from first principles (boot, linker, UART bring-up) similar in spirit to early RTOS or microkernel bring-up work.
 
 The entire workflow is designed to be:
     - Reproducible
@@ -18,7 +18,6 @@ The entire workflow is designed to be:
 - Bring up a bare-metal Cortex-A system on QEMU
 - Implement UART TX/RX using PL011 (polling first, IRQ later)
 - Understand startup, linker, and memory layout
-- Build toward a cooperative → preemptive scheduler
 
 Provide a clean base for:
   * context switching
@@ -26,7 +25,7 @@ Provide a clean base for:
   * simple shell / console tasks
 
 **Target Platform**
-
+----------------------------------
 | Component      | Value                       |
 | -------------- | --------------------------- |
 | CPU            | ARM Cortex-A15              |
@@ -67,27 +66,21 @@ The repository includes a devcontainer.json that automatically installs:
  - GDB
  - Python (for UART simulation)
 
-**Rebuild Codespace (one-time)**
-- Open the repository in Codespaces
-- Press Ctrl + Shift + P
-- Select Codespaces: Rebuild Container
-
-After this, no manual installation is required.
-
 **Build Instructions**
 -----------------------------------
 From the repository root:
     make clean
     make
 
-Artifacts:
-    - build/kernel.elf — ELF image used by QEMU
-    - (optional) build/kernel.lst — disassembly (via make dump)
+**Artifacts:**
+---------------------------------
+   - build/kernel.elf — ELF image used by QEMU
+   - (optional) build/kernel.lst — disassembly (via make dump)
 
 **Running on QEMU**
 ------------------------------
 **Linux/Codespaces/WSL**
-    - ./scripts/run_qemu.sh
+   - ./scripts/run_qemu.sh
 
 **Windows (PowerShell)**
    - .\scripts\run_qemu.ps1
