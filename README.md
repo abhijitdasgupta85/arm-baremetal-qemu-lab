@@ -86,7 +86,7 @@ Artifacts:
 
 **Running on QEMU**
 ------------------------------
-**Linux / Codespaces / WSL**
+**Linux/Codespaces/WSL**
     - ./scripts/run_qemu.sh
 
 **Windows (PowerShell)**
