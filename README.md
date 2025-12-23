@@ -86,8 +86,8 @@ From the repository root:
    - .\scripts\run_qemu.ps1
 
 **Expected output**
-    UART Echo Test (QEMU Cortex-A)
-    Type characters to see them echoed back:
+UART Echo Test (QEMU Cortex-A)
+Type characters to see them echoed back:
 
 **To stop QEMU:**
     Ctrl + C
