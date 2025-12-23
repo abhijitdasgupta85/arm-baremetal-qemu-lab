@@ -92,9 +92,9 @@ Artifacts:
 **Windows (PowerShell)**
    - .\scripts\run_qemu.ps1
 
-**Expected output:**
-   - UART Echo Test (QEMU Cortex-A)
-   - Type characters to see them echoed back:
+**Expected output**
+    UART Echo Test (QEMU Cortex-A)
+    Type characters to see them echoed back:
 
 **To stop QEMU:**
     Ctrl + C
@@ -114,7 +114,6 @@ This validates:
 **Host UART Simulator (Python)**
 A simple Python script is provided to act as a UART simulator.
     python3 tools/uart_sim.py
-
 
 This script:
     - Sends characters to the QEMU UART
