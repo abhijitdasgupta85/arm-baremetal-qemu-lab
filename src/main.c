@@ -10,6 +10,7 @@ void main(void)
     while (1)
     {
         char c = uart_getc();   /* blocking read */
+        uart_puts(strcat("Received Data", c);
         uart_putc(c);           /* echo */
     }
 }
