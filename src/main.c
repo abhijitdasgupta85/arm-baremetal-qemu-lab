@@ -9,8 +9,13 @@ void main(void)
 
     while (1)
     {
+        char buffer[64];
         char c = uart_getc();   /* blocking read */
-        uart_puts(strcat("Received Data", c);
+        
+        strcpy(buffer, "Received Data: ");
+        strcat(buffer, c);
+        uart_puts(buffer);
+
         uart_putc(c);           /* echo */
     }
 }
