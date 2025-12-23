@@ -1,3 +1,4 @@
+#include <string.h>
 #include "uart_pl011.h"
 
 void main(void)
