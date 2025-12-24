@@ -53,8 +53,7 @@ Provide a clean base for:
     │   └── run_qemu.ps1
     ├── tools/
     │   └── uart_sim.py
-    └── .devcontainer/
-        └── devcontainer.json
+
 
 **Development Environment (Recommended)**
 ----------------------------------------------
