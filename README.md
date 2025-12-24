@@ -62,7 +62,6 @@ This project is designed to work out of the box with GitHub Codespaces.
 The repository includes a devcontainer.json that automatically installs:
  - ARM bare-metal GCC toolchain
  - QEMU (ARM system emulator)
- - GDB
  - Python (for UART simulation)
 
 **Build Instructions**
