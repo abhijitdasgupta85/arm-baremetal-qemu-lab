@@ -1,7 +1,7 @@
 #ifndef UART_PL011_H
 #define UART_PL011_H
 
-#include <types.h>
+#include "types.h"
 
 /* =========================================================
  * PL011 UART definitions for QEMU virt

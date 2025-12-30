@@ -44,7 +44,9 @@ def writer(sock):
     while True:
         try:
             # Read a full line from the user (blocking)
-            msg = input("[TX from PYTHON]: ")
+            msg = input(prefix)
+            if "[TX from PYTHON]:" in msg:
+                msg = msg.split(":", 1)[1].strip()
 
             # Ignore empty lines
             if not msg:
