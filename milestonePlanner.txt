@@ -1,0 +1,26 @@
+6) Milestone plan: from Hello → Scheduler
+Milestone 1: Bring-up (Day 1)
+	boot
+	print over UART
+	basic delay loop
+
+Milestone 2: Timer interrupt (Day 2–3)
+	setup GIC (interrupt controller) or start with polling timer first
+	configure ARM generic timer (for v7-A it’s a bit different than v8)
+	demonstrate periodic “tick” printing
+
+Milestone 3: Cooperative scheduler (easiest first)
+	tasks are functions that yield explicitly: task_yield()
+	context is minimal (stack pointer + registers saved on stack)
+	round-robin list
+
+Milestone 4: Preemptive scheduler
+	tick interrupt triggers context switch
+	requires:
+		IRQ entry/exit in assembly
+		saving/restoring full context
+		a stable stack model per task
+
+Milestone 5: Basic synchronization
+	simple spinlock (later)
+	critical sections (disable IRQs)

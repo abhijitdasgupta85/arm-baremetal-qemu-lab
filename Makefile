@@ -30,7 +30,8 @@ LDFLAGS := -T $(LINKER) -nostdlib
 SRCS := \
     src/start.S \
     src/main.c \
-    src/uart_pl011.c
+    src/uart_pl011.c \
+	src/ringbuf.c
 
 # Objects
 OBJS := $(addprefix $(BUILD_DIR)/, $(SRCS:.c=.o))

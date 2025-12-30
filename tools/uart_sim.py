@@ -39,11 +39,12 @@ def writer(sock):
     No local echo of transmitted data.
     """
     print("\n[INFO] Type text and press ENTER to send to QEMU")
+    prefix = "[TX from PYTHON]:"
 
     while True:
         try:
             # Read a full line from the user (blocking)
-            msg = input()
+            msg = input("[TX from PYTHON]: ")
 
             # Ignore empty lines
             if not msg:
