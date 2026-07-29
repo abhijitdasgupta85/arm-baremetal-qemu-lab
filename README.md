@@ -3,7 +3,7 @@
 **Overview**
 ---------------------------------
 
-This repository is a learning and experimentation lab for developing bare-metal software on ARM Cortex-A processors, using QEMU as the execution platform.
+This repository is a experimentation lab for developing bare-metal software on ARM Cortex-A processors, using QEMU as the execution platform.
 
 The project starts from first principles (boot, linker, UART bring-up) similar in spirit to early RTOS or microkernel bring-up work.
 
